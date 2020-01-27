@@ -43,8 +43,6 @@ class Visitor {
   }
   
 }
-let a = new Visitor("Lwazi Mtshali", 26,"2/3/20","10:30","none","Tadiwa")
+
  module.exports = { Visitor };
- a.save()
-a.load("Lwazi Mtshali")
-//console.log(b)
+ 
