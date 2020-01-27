@@ -13,7 +13,7 @@ class Visitor {
   }
   save() {
     let Name = this.name.replace(" ", "_").toLowerCase();
-    fs.appendFile(
+    fs.writeFile(
       `visitor_${Name}.json`,
       JSON.stringify(this, null, 4),
       err => {
@@ -43,8 +43,8 @@ class Visitor {
   }
   
 }
-//let a = new Visitor("Lwazi Mtshali", 26,"2/3/20","10:30","none","Tadiwa")
+let a = new Visitor("Lwazi Mtshali", 26,"2/3/20","10:30","none","Tadiwa")
  module.exports = { Visitor };
-// a.save()
-// let b = a.load("Lwazi Mtshali")
-// console.log(b)
+ a.save()
+a.load("Lwazi Mtshali")
+//console.log(b)
